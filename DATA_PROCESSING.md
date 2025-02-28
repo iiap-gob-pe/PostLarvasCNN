@@ -33,15 +33,7 @@ Corta las imágenes en teselas (ej. 640×640) con un porcentaje de solapamiento.
 **Ejemplo de uso** (luego de replicar histograma en `cel_bb`):
 
 ```bash
-python generate_tiles.py \
-  --input_path datasets/processed/cel_bb/hist_equalized \
-  --input_json hist_equalized_annotations.json \
-  --output_path datasets/processed/cel_bb/tiles_640x640 \
-  --output_json tiles_annotations.json \
-  --tile_width 640 \
-  --tile_height 640 \
-  --overlap 0.5 \
-  --single_class True
+python generate_tiles.py --input_path datasets/processed/cel_bb/hist_equalized --input_json hist_equalized_annotations.json --output_path datasets/processed/cel_bb/tiles_640x640 --output_json tiles_annotations.json --tile_width 640 --tile_height 640 --overlap 0.5 --single_class True
 ```
 
 Parámetros principales:
@@ -63,11 +55,7 @@ Aplica desenfoque (blur) y rotaciones. Dependiendo de tu lógica interna, el scr
 **Ejemplo de uso** (con la carpeta de teselas de `cel_bb`):
 
 ```bash
-python blur_rotation.py \
-  --input_path datasets/processed/cel_bb/tiles_640x640 \
-  --input_json tiles_annotations.json \
-  --output_path datasets/processed/cel_bb/blurred_rotated \
-  --set train
+python blur_rotation.py --input_path datasets/processed/cel_bb/tiles_640x640 --input_json tiles_annotations.json --output_path datasets/processed/cel_bb/blurred_rotated --set train
 ```
 
 - **`--input_path`**: Ruta de las imágenes a modificar (y su JSON).
@@ -87,11 +75,7 @@ Toma las imágenes y sus archivos `.txt` (si en tu flujo ya tienes anotaciones e
 **Ejemplo de uso** (después de `blur_rotation.py` en `cel_bb`):
 
 ```bash
-python split_train_val.py \
-  --input_path datasets/processed/cel_bb/blurred_rotated \
-  --output_path datasets/pre_final_postlarva_dataset_yolov8/cel_bb \
-  --train_ratio 0.8 \
-  --val_ratio 0.2
+python split_train_val.py --input_path datasets/processed/cel_bb/blurred_rotated --output_path datasets/pre_final_postlarva_dataset_yolov8/cel_bb --train_ratio 0.8 --val_ratio 0.2
 ```
 
 - **`--train_ratio`** y **`--val_ratio`** controlan la proporción de datos para entrenamiento y validación.
