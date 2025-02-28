@@ -138,7 +138,7 @@ def process_tiling(input_path, input_json, output_path, output_json, tile_width,
                                 "iscrowd": 0,
                                 "image_id": new_image_id,
                                 "bbox": [x_min - x, y_min - y, w, h],
-                                "category_id": 1 if single_class else ann["category_id"],
+                                "category_id": 0 if single_class else ann["category_id"],
                                 "id": new_annotation_id
                             })
                             new_annotation_id += 1
@@ -150,7 +150,7 @@ def process_tiling(input_path, input_json, output_path, output_json, tile_width,
         "info": {"description": "Tiled dataset", "date_created": get_current_time()},
         "images": new_images,
         "annotations": new_annotations,
-        "categories": [{"id": 1, "name": "object", "supercategory": "none"}] if single_class else categories
+        "categories": [{"id": 0, "name": "object", "supercategory": "none"}] if single_class else categories
     }
     
     save_json(final_coco_json, os.path.join(output_path, output_json))
