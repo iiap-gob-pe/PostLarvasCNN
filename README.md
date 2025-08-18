@@ -73,13 +73,13 @@ Si usas **GPU**, revisa la sección de **instalación de CUDA** en `ENV_SETUP.md
 Antes de entrenar YOLOv8, se deben procesar los datos capturados. Este flujo se compone de:
 
 1. **Replicación de Histograma:** Ajuste de iluminación en imágenes  
-   📄 [`replicate_histogram.py`](datasets/replicate_histogram.py)
+   📄 [`replicate_histogram.py`](/replicate_histogram.py)
 2. **Generación de Tiles:** División en pequeñas regiones  
-   📄 [`generate_tiles.py`](datasets/generate_tiles.py)
+   📄 [`generate_tiles.py`](/generate_tiles.py)
 3. **Blur y Rotación:** Aumento de datos  
-   📄 [`blur_rotation.py`](datasets/blur_rotation.py)
+   📄 [`blur_rotation.py`](/blur_rotation.py)
 4. **División en Train/Valid:** Separación del dataset  
-   📄 [`split_train_val.py`](datasets/split_train_val.py)
+   📄 [`split_train_val.py`](/split_train_val.py)
 5. **Unión final en** `final_postlarva_dataset_yolov8`
 
 Para una guía paso a paso, revisa:  
@@ -88,10 +88,10 @@ Para una guía paso a paso, revisa:
 **Ejemplo rápido de ejecución:**
 
 ```bash
-python datasets/replicate_histogram.py
-python datasets/generate_tiles.py
-python datasets/blur_rotation.py
-python datasets/split_train_val.py
+python ./replicate_histogram.py
+python ./generate_tiles.py
+python ./blur_rotation.py
+python ./split_train_val.py
 ```
 
 ---
