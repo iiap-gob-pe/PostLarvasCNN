@@ -9,7 +9,7 @@
     },
     "images": [
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_092859_v2.jpg",
             "height": 4032,
             "width": 2268,
@@ -17,7 +17,7 @@
             "id": 0
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_094214.jpg",
             "height": 4032,
             "width": 2268,
@@ -25,7 +25,7 @@
             "id": 1
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_094215.jpg",
             "height": 4032,
             "width": 2268,
@@ -33,7 +33,7 @@
             "id": 2
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_094508.jpg",
             "height": 4032,
             "width": 2268,
@@ -41,7 +41,7 @@
             "id": 3
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_100111.jpg",
             "height": 4032,
             "width": 2268,
@@ -49,7 +49,7 @@
             "id": 4
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_101043.jpg",
             "height": 4032,
             "width": 2268,
@@ -57,7 +57,7 @@
             "id": 5
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_101045.jpg",
             "height": 4032,
             "width": 2268,
@@ -65,7 +65,7 @@
             "id": 6
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_101046.jpg",
             "height": 4032,
             "width": 2268,
@@ -73,7 +73,7 @@
             "id": 7
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_101813.jpg",
             "height": 4032,
             "width": 2268,
@@ -81,7 +81,7 @@
             "id": 8
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_102301.jpg",
             "height": 4032,
             "width": 2268,
@@ -89,7 +89,7 @@
             "id": 9
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_103307.jpg",
             "height": 4032,
             "width": 2268,
@@ -97,7 +97,7 @@
             "id": 10
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_103701.jpg",
             "height": 4032,
             "width": 2268,
@@ -105,7 +105,7 @@
             "id": 11
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_110917.jpg",
             "height": 4032,
             "width": 2268,
@@ -113,7 +113,7 @@
             "id": 12
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_111646.jpg",
             "height": 4032,
             "width": 2268,
@@ -121,7 +121,7 @@
             "id": 13
         },
         {
-            "cel": "cel_bb",
+            "phone_model": "cel_bb",
             "file_name": "20240502_112941.jpg",
             "height": 4032,
             "width": 2268,

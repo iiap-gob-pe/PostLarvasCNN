@@ -9,7 +9,7 @@
     },
     "images": [
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_094135.jpg",
             "height": 4608,
             "width": 2592,
@@ -17,7 +17,7 @@
             "id": 0
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_094136.jpg",
             "height": 4608,
             "width": 2592,
@@ -25,7 +25,7 @@
             "id": 1
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_094138.jpg",
             "height": 4608,
             "width": 2592,
@@ -33,7 +33,7 @@
             "id": 2
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_094357.jpg",
             "height": 4608,
             "width": 2592,
@@ -41,7 +41,7 @@
             "id": 3
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_094735.jpg",
             "height": 4608,
             "width": 2592,
@@ -49,7 +49,7 @@
             "id": 4
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_100028.jpg",
             "height": 4608,
             "width": 2592,
@@ -57,7 +57,7 @@
             "id": 5
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_100600.jpg",
             "height": 4608,
             "width": 2592,
@@ -65,7 +65,7 @@
             "id": 6
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_101106.jpg",
             "height": 4608,
             "width": 2592,
@@ -73,7 +73,7 @@
             "id": 7
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_111014.jpg",
             "height": 4608,
             "width": 2592,
@@ -81,7 +81,7 @@
             "id": 8
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_113031.jpg",
             "height": 4608,
             "width": 2592,
@@ -89,7 +89,7 @@
             "id": 9
         },
         {
-            "cel": "cel_smsnga30",
+            "phone_model": "cel_smsnga30",
             "file_name": "20240502_113332.jpg",
             "height": 4608,
             "width": 2592,
