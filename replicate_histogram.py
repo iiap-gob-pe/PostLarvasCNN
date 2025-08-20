@@ -88,49 +88,19 @@ class OptimizedAugmentor:
 
 def load_all_reference_images():
     """Carga TODAS las imágenes de referencia disponibles"""
-    references = {
-        "tnq1_tnd2_m2_jeff_cel_bb": {
-            "npy_path": "referential_photos/_tnq1_tnd2_m2_jeff_cel_bb_reference_image.npy",
-            "metadata": {"phone_model": "cel_smsngalaxyS21FE5G", "exposure_time": "1/60", "iso_speed": "ISO-80", "focal_distance": "5mm"}
-        },
-        "tnq2_tnd2_m1_paul_cel_bb": {
-            "npy_path": "referential_photos/_tnq2_tnd2_m1_paul_cel_bb_reference_image.npy",
-            "metadata": {"phone_model": "cel_smsngalaxyS21FE5G", "exposure_time": "1/60", "iso_speed": "ISO-80", "focal_distance": "5mm"}
-        },
-        "tnq1_tnd1_m1_paul_cel_ppr": {
-            "npy_path": "referential_photos/_tnq1_tnd1_m1_paul_cel_ppr_reference_image.npy",
-            "metadata": {"phone_model": "cel_smsngalaxyA32_5G", "exposure_time": "1/50", "iso_speed": "ISO-100", "focal_distance": "5mm"}
-        },
-        "tnq1_tnd1_m2_jeff_cel_ppr": {
-            "npy_path": "referential_photos/_tnq1_tnd1_m2_jeff_cel_ppr_reference_image.npy",
-            "metadata": {"phone_model": "cel_smsngalaxyA32_5G", "exposure_time": "1/50", "iso_speed": "ISO-160", "focal_distance": "5mm"}
-        },
-        "tnq1_tnd2_m2_jeff_cel_jrt": {
-            "npy_path": "referential_photos/_tnq1_tnd2_m2_jeff_cel_jrt_reference_image.npy",
-            "metadata": {"phone_model": "cel_honorX6A", "exposure_time": "1/60", "iso_speed": "ISO-500", "focal_distance": "4mm"}
-        },
-        "tnq2_tnd1_m1_paul_cel_jrt": {
-            "npy_path": "referential_photos/_tnq2_tnd1_m1_paul_cel_jrt_reference_image.npy",
-            "metadata": {"phone_model": "cel_honorX6A", "exposure_time": "1/60", "iso_speed": "ISO-160", "focal_distance": "4mm"}
-        },
-        "tnq3_tnd2_m3_elk_cel_smsnga30": {
-            "npy_path": "referential_photos/_tnq3_tnd2_m3_elk_cel_smsnga30_reference_image.npy",
-            "metadata": {"phone_model": "cel_smsnga30", "exposure_time": "1/144", "iso_speed": "ISO-200", "focal_distance": "4mm"}
-        },
-        "tnq4_tnd1_m2_jeff_cel_smsnga30": {
-            "npy_path": "referential_photos/_tnq4_tnd1_m2_jeff_cel_smsnga30_reference_image.npy",
-            "metadata": {"phone_model": "cel_smsnga30", "exposure_time": "1/121", "iso_speed": "ISO-200", "focal_distance": "4mm"}
-        },
-        "m2_rodolfo_cel_rod": {
-            "npy_path": "referential_photos/_m2_rodolfo_reference_image.npy",
-            "metadata": {"phone_model": "cel_xiaomiPOCOM3Pro_5G", "exposure_time": "1/80", "iso_speed": "ISO-250", "focal_distance": "5mm"}
-        },
-        "m1_ed_cel_ed": {
-            "npy_path": "referential_photos/_m1_ed_reference_image.npy",
-            "metadata": {"phone_model": "cel_xiaomiPOCOM3Pro_5G", "exposure_time": "1/30", "iso_speed": "ISO-50", "focal_distance": "5mm"}
-        }
-    }
+    references_file = 'referential_photos.json'  # Cambiado el nombre del archivo
     
+    if not os.path.exists(references_file):
+        print(f"⚠️  Archivo de referencias no encontrado: {references_file}")
+        return {}
+
+    try:
+        with open(references_file, 'r') as f:
+            references = json.load(f)
+        print(f"✅ Referencias cargadas exitosamente desde {references_file}")
+    except Exception as e:
+        print(f"❌ Error cargando el archivo JSON de referencias: {e}")
+        return {}
     print("🔄 Cargando todas las imágenes de referencia disponibles...")
     loaded_references = {}
     
